@@ -1,0 +1,51 @@
+/* Resetando margens e padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f4c7f4, #e8a9c1);
+    font-family: 'Poppins', sans-serif;  /* Fonte suave e moderna */
+}
+
+/* Estilo da área do letreiro */
+.container {
+    width: 80%;
+    max-width: 1000px;  /* Max largura */
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo suave e translúcido */
+    border-radius: 50px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do letreiro */
+.letreiro {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 24px;
+    color: #8e4f8e;  /* Cor de texto suave, mais feminina */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    animation: deslizar 12s ease-in-out infinite;
+}
+
+/* Definindo a animação de deslizar */
+@keyframes deslizar {
+    0% {
+        transform: translateX(100%);  /* Começa da direita */
+    }
+    50% {
+        transform: translateX(-100%); /* Vai até a esquerda */
+    }
+    100% {
+        transform: translateX(100%);  /* Volta para a direita */
+    }
+}
+
